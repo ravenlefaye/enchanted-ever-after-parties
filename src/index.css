@@ -1,7 +1,7 @@
 :root {
   /* Colors -----------------------------------> */
-  --background: pink;
-  --font-color: white;
+  --background: rgb(255, 226, 231);
+  --font-color: rgb(0, 0, 0);
   /* <----- -----> */
 }
 
