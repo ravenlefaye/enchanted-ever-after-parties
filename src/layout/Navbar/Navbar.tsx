@@ -1,10 +1,16 @@
+import navbarData from '../../data/navbar-data';
+import NavButton from './components/nav-button/NavButton';
 import './navbar.css'
 
 const Navbar = () => {
   return (
-    <>
-      Navbar
-    </>
+    <div className='navbar'>
+      {navbarData.map((data)=> (
+        <NavButton
+          name={data.name}
+        />
+      ))}
+    </div>
   );
 };
 

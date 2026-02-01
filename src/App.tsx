@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './layout/Layout';
-import Landing from './layout/Landing/Landing';
+import Home from './layout/home/Home';
 import RouteError from './utils/errors/route-error/RouteError';
 import './App.css'
 
@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing/>,
+        element: <Home/>,
         errorElement: <RouteError/>,
       },
     ],
