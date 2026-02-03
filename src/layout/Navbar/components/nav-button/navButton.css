@@ -4,4 +4,11 @@
   width: 100%;
   cursor: pointer;
   text-transform: uppercase;
+  width: max-content;
+  margin: 0;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+.navButton:is(:hover) {
+  background-color: white;
 }

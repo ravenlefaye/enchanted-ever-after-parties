@@ -1,6 +1,9 @@
 :root {
   /* Colors -----------------------------------> */
   --background: #d5e3ee;
+  --header-bg: #ce00b2;
+  --footer-bg: #4e254e;
+
   --font-color: rgb(0, 0, 0);
   /* <----- -----> */
 }
