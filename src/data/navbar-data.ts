@@ -1,4 +1,4 @@
-import type { NavbarDataType } from "../types/navbar.type";
+import type { NavbarDataType } from "../types/Navbar.type";
 
 const navbarData: NavbarDataType[] = [
   {
@@ -19,7 +19,7 @@ const navbarData: NavbarDataType[] = [
   {
     id: 3,
     name: 'Character Performances',
-    link: '',
+    link: '/charperformance',
   },
   {
     id: 4,

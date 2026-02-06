@@ -3,11 +3,12 @@ import NavButton from './components/nav-button/NavButton';
 import './navbar.css'
 
 const Navbar = () => {
+
   return (
     <div className='navbar'>
       {navbarData.map((data)=> (
         <NavButton
-          name={data.name}
+          data={data}
         />
       ))}
     </div>
