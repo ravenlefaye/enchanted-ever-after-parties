@@ -1,6 +1,6 @@
 import { useRef, useState, type FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
-import logo from './../../../public/imgs/eaelogo.png'
+import logo from './../../assets/imgs/eaelogo.png'
 import './contact.css';
 
 const Contact = () => {
