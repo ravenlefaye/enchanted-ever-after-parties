@@ -62,17 +62,17 @@ const Contact = () => {
           >
             <div className='input-field'>
               <label>name</label>
-              <input type='text' name='name' id='name' />
+              <input type='text' name='name' id='name' required/>
             </div>
 
             <div className='input-field'>
               <label>email</label>
-              <input type='email' name='email' id='email' />
+              <input type='email' name='email' id='email' required/>
             </div>
 
             <div className='input-field'>
               <label>message</label>
-              <textarea name='message' id='message' rows={8} />
+              <textarea name='message' id='message' rows={8} required/>
             </div>
 
             <input type='submit' id='button' value='Send' className='submit' />
