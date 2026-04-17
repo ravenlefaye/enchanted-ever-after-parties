@@ -1,6 +1,8 @@
 import { useRef, useState, type FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from './../../assets/imgs/eaelogo.png'
+import faceSpace from '../../assets/imgs/facespace.png'
+import insta from '../../assets/imgs/insta.png'
 import './contact.css';
 
 const Contact = () => {
@@ -28,12 +30,20 @@ const Contact = () => {
   };
 
   return (
-    <div className="layout">
-      <div className="splits">
-        <div className="logo">
-          <img className="logo-img" src={logo} />
+    <div className='layout'>
+      <div className='splits'>
+        <div className='logo'>
+          <img className='logo-img' src={logo} />
+          <div className='social-icons-wrapper'>
+            <a href='https://www.facebook.com/profile.php?id=61566182507844&mibextid=wwXIfr&mibextid=wwXIfr' target="_blank">
+              <img className='social-icon' src={faceSpace}/>
+            </a>
+            <a href='https://www.instagram.com/enchantedeverafterparties' target="_blank">
+              <img className='social-icon' src={insta}/>
+            </a>
+          </div>
         </div>
-        <div className="contact">
+        <div className='contact'>
           <h2>Contact Us</h2>
           <article className='blurb'>
             {`Bringing color, sparkle, and a little magic to celebrations of all
@@ -45,34 +55,34 @@ const Contact = () => {
           </article>
 
           <form
-            className="contact-form"
+            className='contact-form'
             ref={form}
-            id="form"
+            id='form'
             onSubmit={sendEmail}
           >
-            <div className="input-field">
+            <div className='input-field'>
               <label>name</label>
-              <input type="text" name="name" id="name" />
+              <input type='text' name='name' id='name' />
             </div>
 
-            <div className="input-field">
+            <div className='input-field'>
               <label>email</label>
-              <input type="email" name="email" id="email" />
+              <input type='email' name='email' id='email' />
             </div>
 
-            <div className="input-field">
+            <div className='input-field'>
               <label>message</label>
-              <textarea name="message" id="message" rows={8} />
+              <textarea name='message' id='message' rows={8} />
             </div>
 
-            <input type="submit" id="button" value="Send" className="submit" />
+            <input type='submit' id='button' value='Send' className='submit' />
           </form>
 
-          {response === "sent" && (
-            <p className="success">Message sent successfully!</p>
+          {response === 'sent' && (
+            <p className='success'>Message sent successfully!</p>
           )}
-          {response === "error" && (
-            <p className="error">Something went wrong. Please try again.</p>
+          {response === 'error' && (
+            <p className='error'>Something went wrong. Please try again.</p>
           )}
         </div>
       </div>
