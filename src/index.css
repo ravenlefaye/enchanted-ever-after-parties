@@ -1,18 +1,16 @@
 :root {
   /* Colors -----------------------------------> */
-  --background: #d5e3ee;
+  --background: #fd83df;
   --header-bg: #ce00b2;
   --footer-bg: #4e254e;
 
-  --font-color: rgb(0, 0, 0);
+  --font-color: #fb6fa4;
   /* <----- -----> */
 }
 
 html, body{
   margin: 0;
   padding: 0;
-  max-height: 100dvh;
-  overflow: hidden;
 }
 
 body {

@@ -1,0 +1,159 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-image: url('./../../../public/imgs/sparklebg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.splits {
+  margin-top: 2%;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 5rem;
+}
+
+.contact {
+  margin-top: 3%;
+  text-align: center;
+  width: 30%;
+}
+
+.contact > h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.logo {
+  text-align: end;
+  width: fit-content;
+}
+.logo-img {
+  width: 30rem
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+.input-field {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field > input,
+.input-field > textarea {
+  padding: .5rem .5rem;
+  border: 2px solid #fb6fa4;
+  border-radius: 10px;
+  transition: border-color 0.2s ease-in-out;
+  outline: none;
+}
+
+/* Combine input and textarea into one block */
+.input-field > :is(input, textarea):is(:focus, :hover, :active) {
+  border-color: #ffd8e7;
+}
+
+.submit {
+  border: none;
+  background-color: #fb6fa4;
+  color: white;
+  padding: .5rem 3rem;
+  width: fit-content;
+  align-self: end;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+.submit:is(:focus, :hover, :active) {
+  background-color: #fcaecc;
+}
+
+/* 2. LAPTOPS / SMALL DESKTOPS (Under 1200px) */
+@media (max-width: 1200px) {
+  .contact {
+    width: 45%; 
+  }
+  .logo-img {
+    width: 25rem;
+  }
+  .splits {
+    gap: 3rem;
+  }
+}
+
+/* 3. TABLETS / PORTRAIT IPADS (Under 992px) */
+@media (max-width: 992px) {
+  .splits {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    gap: .6rem;
+    margin-top: 1em;
+  }
+  .logo {
+    order: -1; /* Keep logo on top */
+    text-align: center;
+  }
+  .contact {
+    width: 80%;
+    margin-top: 0;
+  }
+  .contact-form {
+    gap: .5rem;
+    
+    margin-bottom: 20%;
+  }
+}
+
+/* 4. MOBILE DEVICES (Under 600px) */
+@media (max-width: 600px) {
+  .contact {
+    width: 95%;
+  }
+  .logo-img {
+    width: 18rem;
+  }
+  .contact > h2 {
+    font-size: 1.8rem;
+  }
+  label {
+    font-size: 1.2rem;
+  }
+  .submit {
+    width: 100%;
+    align-self: center;
+  }
+  .input-field > input,
+  .input-field > textarea {
+    font-size: 1rem;
+  }
+}
+
+/* 5. TINY DEVICES (Under 350px) */
+@media (max-width: 350px) {
+  .logo-img {
+    width: 12rem;
+  }
+  .contact > h2 {
+    font-size: 1.5rem;
+  }
+}
